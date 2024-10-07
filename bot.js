@@ -1,7 +1,7 @@
 const TelegramBot = require('node-telegram-bot-api');
 
 
-const token = '7720985506:AAHqpNJzNuHMjMrdvJ8B_7PDSxJSR20kfN0';
+const token = '7375700638:AAHe3cnsdQaESFhOtJ7mZmQ0bO9TOo4ebyU';
 const editorChatId = 1137493485;
 
 
@@ -28,7 +28,7 @@ bot.on('message', (msg) => {
         }
 
         // (ID: ${chatId})
-        bot.sendMessage(editorChatId, `Новое анонимное сообщение от пользователя :\n${messageText}`);
+        bot.sendMessage(editorChatId, `Новое анонимное сообщение от пользователя(ID: ${chatId}) :\n${messageText}`);
         
 
         bot.sendMessage(chatId, 'Ваше сообщение было отправлено анонимно.');
